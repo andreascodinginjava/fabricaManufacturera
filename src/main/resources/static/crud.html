@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="contenedorCRUD">
+        <br>
+        <div class="tituloDS">
+            <div class="imgCRUD">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="tituloCRUD">
+                <span id="fabrica">Fabrica manufacturera</span><br>
+                <span id="prueba">Prueba tecnica JAVA</span>
+            </div>
+        </div>
+        <div class="busqueda">
+            <span class="titulo">CRUD inventarios</span>
+            <button onclick="salir()"><img src="img/cerrar-sesion.png" alt="" height="20px" width="20px"></button><br><br>
+            <hr>
+        </div>
+        <div class="crud">
+            <div class="form">
+                <div class="campo">
+                    <span>Id producto</span><br>
+                    <input type="number" id="id">
+                </div>
+                <div class="campo">
+                    <span>Nombre producto</span><br>
+                    <input type="text" id="nombre">
+                </div>
+                <div class="campo">
+                    <span>Estado producto</span><br>
+                    <select name="estado" id="estado">
+                        <option value="ACTIVO" selected>Activo</option>
+                        <option value="INACTIVO">Inactivo</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <span>Tipo elaboracion</span><br>
+                    <select name="tipo" id="tipo">
+                        <option value="MANO" selected>Elaborado a mano</option>
+                        <option value="MAQUINA">Elaborado por maquina</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <span>Es defectuoso</span><br>
+                    <label><input type="checkbox" id="defectuoso" name="defectuoso" value="SI">Si</label>
+                </div>
+                <div class="campo">
+                    <span>Comentario</span><br>
+                    <textarea name="comentario" id="comentario"></textarea>
+                </div>
+                <div class="campo">
+                    <span>Fecha de entrada</span><br>
+                    <input type="date" id="entrada">
+                </div>
+                <!--<div class="campo">
+                    <span>Fecha de salida</span><br>
+                    <input type="date" id="salida"> 
+                </div>-->
+                <div class="campo">
+                    <span>Categoria</span><br>
+                    <select name="categoria" id="categoria"></select>
+                </div>
+                <button class="boton" onclick="crearInventario()">Crear</button><br>
+                <button class="boton" onclick='consultarInventarioEstado()'>Recargar</button><br>
+            </div>
+            <div class="tabla">
+                <div class="tablaInventario">
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>Tipo</th>
+                                <th>Defectuoso</th>
+                                <th>Comentario</th>
+                                <th>Fecha entrada</th>
+                                <th>Fecha salida</th>
+                                <th>Categoria</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="cuerpo" id="contenidoInventario">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="busquedas">
+                <span>Busquedas</span><br><br>
+                <button class="bus" onclick="consultarInventario()">Ver todo el inventario</button><br>
+                <button class="bus" onclick="consultarInventarioEstado()">Ver inventario activo</button><br>
+                <button class="bus" onclick="consultarInventarioDefectuoso()">Ver inventario defectuoso</button>
+
+                <br><br>
+                <div class="crearCategoria">
+                    <br>
+                    <span>Categoria</span>
+                    <br>
+                    <div class="campo" id="campoCat">
+                        <span>Id categoria</span><br>
+                        <input type="number" id="idCat">
+                    </div>
+                    <div class="campo" id="campoCat">
+                        <span>Nombre categoria</span><br>
+                        <input type="text" id="nombreCat">
+                    </div>
+                    <div class="campo" id="campoCat">
+                        <span>Descripcion categoria</span><br>
+                        <textarea name="desCat" id="desCat"></textarea>
+                    </div>
+                    <button class="catButton" onclick="crearCategoria()">Crear categoria</button>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    font-family: Sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 270px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(22, 33, 62, 0.452);
+}
+
+.logo {
+    width: 60%;
+    text-align: center;
+}
+
+.login {
+    width: 40%;
+    text-align: center;
+}
+
+.campo {
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgb(100, 92, 170);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.campo input {
+    width: 95%;
+    margin-left: 5px;
+    font-size: 16px;
+    color: rgb(65, 65, 65);
+    border: none;
+    outline: none;
+}
+
+.campo label {
+    display: flex;
+    text-align: left;
+}
+
+.campo input[type="checkbox"] {
+    text-align: left;
+    width: 10%;
+}
+
+.campo span {
+    width: 95%;
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgb(100, 92, 170);
+}
+
+button {
+    background-color: rgb(100, 92, 170);
+    color: white;
+    width: 80%;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    color: rgb(100, 92, 170);
+    font-size: 30px;
+}
+
+.espacio {
+    height: 100px;
+}
+
+.encabezado {
+    margin-top: 5%;
+    border-right: 1px solid rgb(100, 92, 170);
+    height: 90%;
+}
+
+#fabrica {
+    font-size: 22px;
+}
+
+/*CSS para CRUD*/
+
+.contenedorCRUD {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(22, 33, 62, 0.452);
+}
+
+.tituloDS {
+    text-align: center;
+    display: flex;
+}
+
+.imgCRUD {
+    width: 60%;
+    text-align: center;
+}
+
+.tituloCRUD {
+    margin-top: 25px;
+    width: 40%;
+    text-align: left;
+}
+
+.busqueda {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.crud {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.form {
+    width: 20%;
+}
+
+.tabla {
+    width: 65%;
+}
+
+.boton {
+    margin-left: 10%;
+}
+
+.busqueda label {
+    display: flex;
+}
+
+.busqueda button {
+    width: 5%;
+    height: 20px;
+    background-color: white;
+}
+
+.busqueda input {
+    width: 95%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.busquedas {
+    text-align: center;
+    width: 15%;
+}
+
+.bus {
+    border: 1px solid grey;
+    color: grey;
+    background-color: white;
+    height: 40px;
+}
+
+select, textarea {
+    border: none;
+    width: 95%;
+    outline: none;
+    margin-left: 5px;
+    font-family: Sans-serif;
+    font-size: 16px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.8em;
+    min-width: 95%;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px lightgray;
+}
+
+.content-table thead tr {
+    background-color: rgb(100, 92, 170);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: rgba(211, 211, 211, 0.253);
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(100, 92, 170);
+}
+
+.icon {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.cat {
+    display: flex;
+}
+
+.cat select {
+    width: 90%;
+}
+
+.cat button {
+    width: 10%;
+    margin-right: 3px;
+}
+
+/*Categoria*/
+.crearCategoria {
+    background-color: rgb(100, 92, 170);
+    color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#campoCat {
+    border: 1px solid white;
+}
+
+#campoCat input, #campoCat textarea {
+    background-color: transparent;
+    color: white;
+}
+
+#campoCat span {
+    color: white;
+    font-size: 12px;
+}
+
+.catButton {
+    background-color: white;
+    color: rgb(100, 92, 170);
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(100, 92, 170);
+}
